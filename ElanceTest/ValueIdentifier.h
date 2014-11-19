@@ -10,4 +10,7 @@
 
 @interface ValueIdentifier : NSObject
 
+- (id) initWithValuesArray:(NSArray *) valuesArray;
+- (void) beginValuesIdentificationProcess;
+
 @end

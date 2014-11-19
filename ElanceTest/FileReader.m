@@ -7,6 +7,7 @@
 //
 
 #import "FileReader.h"
+#import "ValueIdentifier.h"
 
 #define FILE_VALUE_DELIMITER @","
 #define DEFAUlT_FILENAME @"textfile.txt"
@@ -28,9 +29,18 @@
     NSString * contents = [NSString stringWithContentsOfFile:fileName encoding:NSASCIIStringEncoding error:nil];
     NSArray * lines = [contents componentsSeparatedByString:FILE_VALUE_DELIMITER];
     
+    [self beginValueIndentification:lines];
+    
     NSLog(@"Logging number of items from file. COUNT: %lu", (unsigned long)lines.count);
+    
 
 
+}
+
+- (void) beginValueIndentification: (NSArray *) array
+{
+    ValueIdentifier *valIdentifier = [[ValueIdentifier alloc] initWithValuesArray:array];
+    [valIdentifier beginValuesIdentificationProcess];
 }
 
 @end
