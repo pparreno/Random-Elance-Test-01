@@ -16,6 +16,7 @@
     
     if(stringToReturn == nil)
     {
+        //returns a random doulbe. Initial value was divided by a random dividend of 1 to 5
         double randomNum = (double)(arc4random_uniform(((unsigned)RAND_MAX + 1))) / ((arc4random_uniform(6)+1));
         stringToReturn = [NSString stringWithFormat:@"%.25g", randomNum];
     }
