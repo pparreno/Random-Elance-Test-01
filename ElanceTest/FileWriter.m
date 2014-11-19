@@ -88,7 +88,6 @@
     
     int length = (int)[string length];
     _characterSize = _characterSize + (length * sizeof(char));
-    NSLog(@"length: %i", _characterSize);
     return _characterSize;
 }
 

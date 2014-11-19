@@ -12,6 +12,8 @@
 		E5E27B6A1A1B1BDC001FDE79 /* RealNumberGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27B691A1B1BDC001FDE79 /* RealNumberGenerator.m */; };
 		E5E27B6D1A1B1C2C001FDE79 /* ValueGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27B6C1A1B1C2C001FDE79 /* ValueGenerator.m */; };
 		E5E27B701A1B537A001FDE79 /* NSString+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27B6F1A1B537A001FDE79 /* NSString+Random.m */; };
+		E5F2A2421A1C924C00AE6421 /* FileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A2411A1C924C00AE6421 /* FileReader.m */; };
+		E5F2A2451A1C97A500AE6421 /* ValueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A2441A1C97A500AE6421 /* ValueIdentifier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		E5E27B6C1A1B1C2C001FDE79 /* ValueGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueGenerator.m; sourceTree = "<group>"; };
 		E5E27B6E1A1B537A001FDE79 /* NSString+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Random.h"; sourceTree = "<group>"; };
 		E5E27B6F1A1B537A001FDE79 /* NSString+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Random.m"; sourceTree = "<group>"; };
+		E5F2A2401A1C924C00AE6421 /* FileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileReader.h; sourceTree = "<group>"; };
+		E5F2A2411A1C924C00AE6421 /* FileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileReader.m; sourceTree = "<group>"; };
+		E5F2A2431A1C97A500AE6421 /* ValueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueIdentifier.h; sourceTree = "<group>"; };
+		E5F2A2441A1C97A500AE6421 /* ValueIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueIdentifier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,10 @@
 				E5E27B6C1A1B1C2C001FDE79 /* ValueGenerator.m */,
 				E5E27B6E1A1B537A001FDE79 /* NSString+Random.h */,
 				E5E27B6F1A1B537A001FDE79 /* NSString+Random.m */,
+				E5F2A2401A1C924C00AE6421 /* FileReader.h */,
+				E5F2A2411A1C924C00AE6421 /* FileReader.m */,
+				E5F2A2431A1C97A500AE6421 /* ValueIdentifier.h */,
+				E5F2A2441A1C97A500AE6421 /* ValueIdentifier.m */,
 			);
 			path = ElanceTest;
 			sourceTree = "<group>";
@@ -140,6 +150,8 @@
 			files = (
 				E5E27B641A1B15E0001FDE79 /* FileWriter.m in Sources */,
 				E5E27B6A1A1B1BDC001FDE79 /* RealNumberGenerator.m in Sources */,
+				E5F2A2421A1C924C00AE6421 /* FileReader.m in Sources */,
+				E5F2A2451A1C97A500AE6421 /* ValueIdentifier.m in Sources */,
 				E5E27B5C1A1B1488001FDE79 /* main.m in Sources */,
 				E5E27B701A1B537A001FDE79 /* NSString+Random.m in Sources */,
 				E5E27B6D1A1B1C2C001FDE79 /* ValueGenerator.m in Sources */,
@@ -258,6 +270,7 @@
 				E5E27B611A1B1488001FDE79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
