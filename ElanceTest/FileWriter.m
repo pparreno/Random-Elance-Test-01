@@ -13,6 +13,8 @@
 
 #define MAX_FILE_SIZE_IN_BYTES 10485760
 #define FILE_VALUE_DELIMITER @","
+#define DEFAUlT_FILENAME @"textfile.txt"
+#define RAND_MAX_FOR_STRINGS 50
 
 @interface FileWriter ()
 {
@@ -44,8 +46,8 @@
     NSString *documentsDirectory = [paths objectAtIndex:0];
     
     //make a file name to write the data to using the documents directory:
-    NSString *fileName = [NSString stringWithFormat:@"%@/textfile.txt",
-                          documentsDirectory];
+    NSString *fileName = [NSString stringWithFormat:@"%@/%@",
+                          documentsDirectory, DEFAUlT_FILENAME];
     
     NSOutputStream *stream = [[NSOutputStream alloc] initToFileAtPath:fileName append:NO];
     [stream open];
@@ -71,9 +73,9 @@
         case 0:
             return [NSString stringWithString: [self.realNumberGenerator generateStringRepresentationOfRandomValue]];
         case 1:
-            return [NSString randomizedAlphanumericStringWithLength:arc4random_uniform(50)+ DEFAULT_LENGTH];
+            return [NSString randomizedAlphanumericStringWithLength:arc4random_uniform(RAND_MAX_FOR_STRINGS)+ DEFAULT_LENGTH];
         case 2:
-            return [NSString randomizedAlphabetOnlyStringWithLength:arc4random_uniform(50)+ DEFAULT_LENGTH];
+            return [NSString randomizedAlphabetOnlyStringWithLength:arc4random_uniform(RAND_MAX_FOR_STRINGS)+ DEFAULT_LENGTH];
         case 3:
             return [NSString stringWithFormat:@"%d", arc4random_uniform(RAND_MAX)];
         default:
