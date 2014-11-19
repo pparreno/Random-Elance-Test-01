@@ -10,4 +10,6 @@
 
 @interface FileReader : NSObject
 
+- (void) beginFileReading;
+
 @end

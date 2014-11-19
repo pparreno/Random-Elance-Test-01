@@ -8,16 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "FileWriter.h"
+#import "FileReader.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
-        
+        NSLog(@"Hi There!");
+        NSLog(@"Starting writing operation!");
         FileWriter *writer = [[FileWriter alloc] init];
         [writer writeToExternalFilePathWithItems:nil];
+        NSLog(@"Finished writing operation!");
         
-        
+        NSLog(@"Starting reading operation!");
+        FileReader *reader = [[FileReader alloc] init];
+        [reader beginFileReading];
+        NSLog(@"Finished reading operation!");
     }
     return 0;
 }
