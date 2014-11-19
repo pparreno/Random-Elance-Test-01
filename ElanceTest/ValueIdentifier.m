@@ -75,7 +75,7 @@
             } else if((isAplhabet == NO) && (isInteger == YES)) {
                 NSLog(@"[%d] \"%@\" - %@", index, value, INTEGER_LABEL);
             } else {
-                NSLog(@"[%d] \"%@\" - %@", index, value, ALPHANUMERIC_LABEL);
+                NSLog(@"[%d] \"%@\" - %@", index, [value stringByReplacingOccurrencesOfString:@" " withString:@""], ALPHANUMERIC_LABEL);
             }
         
         }
